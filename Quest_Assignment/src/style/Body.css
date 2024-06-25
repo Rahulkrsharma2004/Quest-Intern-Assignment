@@ -1,0 +1,59 @@
+.bodyContainer {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 80px;
+  /* background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd); */
+  background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg');
+  /* background-size: cover; */
+   background-position:right;
+  background-repeat: no-repeat;
+}
+
+.bodyContainer h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.bodyContainer h3 {
+  font-size: 1.25em;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.emailForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.emailForm input[type="email"] {
+  padding: 20px;
+  font-size: 1em;
+  border: 2px #3e3f8a solid;
+  border-radius: 5px;
+  outline: none;
+  width: 480px;
+}
+
+.emailForm button {
+  position: absolute;
+  padding: 7px 9px;
+  font-size: 1em;
+  border: 2px solid #6365dd;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  right: 25rem;
+}
+
+.emailForm button:hover {
+  background-color: #8a2be2;
+}
+
+.noCreditCard {
+  margin-top: 10px;
+  font-size: 0.9em;
+}

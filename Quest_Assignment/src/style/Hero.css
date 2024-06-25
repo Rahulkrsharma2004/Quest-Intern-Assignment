@@ -1,0 +1,86 @@
+.hero-container {
+  text-align: center;
+  padding: 80px;
+  background-image: url("/path/to/your/background-image.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-container p {
+  font-size: 1.5em;
+  margin: 2em 1rem;
+}
+
+.hero-container-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 15px;
+  margin-bottom: 40px;
+  margin: auto;
+  width: 50%;
+  padding: 7px;
+  background-color: #1b1b1baf;
+  border-radius: 15px;
+}
+
+.hero-container-icon div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #262626;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container-icon img {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+.icons-container {
+  position: relative;
+}
+
+.main-icon {
+  display: block;
+  margin: 0 auto 0;
+  width: 40%; /* Adjust as necessary */
+  height: 50%;
+}
+
+.sub-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 70rem;
+}
+.icon {
+  border: 1px solid rgb(124, 131, 138);
+  border-radius: 10px;
+  /* width:225px; */
+  height: auto;
+}
+.sub-icons img {
+  width: 225px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 10px;
+  background: transparent;
+}
+.icon:hover {
+  background: linear-gradient(5deg, #260f44, #20154a 49%, #222340);
+}

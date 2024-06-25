@@ -1,0 +1,144 @@
+.navbar {
+  background-color: hsla(0, 0%, 7%, 0.889);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  position: sticky;
+  padding: 25px 0px 10px 80px;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-blur {
+  /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  /* z-index: -1; */
+}
+
+/* .navbar-logo,
+.navbar-links,
+.navbar-buttons {
+  position: relative;
+  z-index: 1;
+} */
+
+.navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  background: none;
+  font-size: 19px;
+  font-weight: 600;
+  gap: 10px;
+  margin-right: 10rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 200px;
+  background-color: rgba(31, 31, 31, 0.484);
+  top: 20px;
+  left: 0;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropDownItem {
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropDownItem:hover {
+  background-color: rgb(62, 62, 62);
+  border-radius: 4px;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 30px;
+  background-color: transparent;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid #8a2be2;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #8a2be2, #1e90ff);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.hameburgerMenu {
+  display: none;
+}
+.hamMenu {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 10rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+@media (max-width: 900px) {
+  .navbar-links,
+  .navbar-buttons {
+    display: none;
+  }
+  .hameburgerMenu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  .navbar-logo {
+    flex: 1;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-logo {
+    flex: 1;
+    font-size: 16px;
+  }
+}
+@media (max-width: 300px) {
+  .navbar-logo {
+    flex: 1;
+    font-size: 12px;
+  }
+}
