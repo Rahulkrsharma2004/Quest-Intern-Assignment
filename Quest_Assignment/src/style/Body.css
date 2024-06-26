@@ -4,11 +4,25 @@
   margin: auto;
   padding: 80px;
   background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd);
-  background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg');
-  background-image:url(https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg), url(https://www.questlabs.ai/assets/rightSideDots-VoZRD2RA.svg);
-  /* background-size: cover; */
-   background-position:right;
+  background-image: url("https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg");
+  background-position: right;
   background-repeat: repeat;
+}
+.logofix {
+  background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd);
+  box-shadow: rgba(172, 172, 231, 0.94) 0px 0px 29px 0px;
+  z-index: 999;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+}
+.logofix img {
+  background: transparent;
+  margin-top: 1rem;
 }
 
 .bodyContainer h1 {
