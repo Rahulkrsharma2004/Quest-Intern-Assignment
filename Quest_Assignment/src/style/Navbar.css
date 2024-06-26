@@ -1,5 +1,5 @@
 .navbar {
-  background-color: hsla(0, 0%, 7%, 0.889);
+  background-color: hsla(0, 0%, 0%, 0.839);
   color: white;
   display: flex;
   justify-content: space-around;
@@ -8,21 +8,17 @@
   position: sticky;
   padding: 25px 0px 10px 80px;
   top: 0;
-  z-index: 1000;
+  /* filter: blur(8px); */
+  /* z-index: 1000; */
 }
 
-.navbar-blur {
-  /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
-  /* z-index: -1; */
-}
 
-/* .navbar-logo,
+.navbar-logo,
 .navbar-links,
 .navbar-buttons {
   position: relative;
   z-index: 1;
-} */
+}
 
 .navbar-logo {
   display: flex;

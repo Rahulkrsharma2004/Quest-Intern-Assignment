@@ -1,7 +1,7 @@
 .hero-container {
   text-align: center;
   padding: 80px;
-  background-image: url("/path/to/your/background-image.jpg"); /* Replace with your image path */
+  /* background-image: url("/path/to/your/background-image.jpg"); Replace with your image path */
   background-size: cover;
   background-position: center;
   color: white;
@@ -53,7 +53,7 @@
 }
 
 .icons-container {
-  position: relative;
+  /* position: relative; */
 }
 
 .main-icon {
@@ -75,9 +75,80 @@
   /* width:225px; */
   height: auto;
 }
+.img-box{
+  margin-top: 0rem;
+}
+.AI-div1{
+  position: relative;
+  width: 180px;
+  height: 15px;
+  padding: 10px;
+  border: 0.5px solid rgb(153, 153, 153);
+  border-radius: 8px;
+  left: 8rem;
+  bottom: 9rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.AI-div1 p {
+  margin: 0;
+  font-size: 15px;
+}
+.AI-div3{
+  position: relative;
+  width: 180px;
+  height: 15px;
+  padding: 10px;
+  border: 0.5px solid rgb(153, 153, 153);
+  border-radius: 8px;
+  left: 11rem;
+  bottom: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.AI-div3 p {
+  margin: 0;
+  font-size: 15px;
+}
+.AI-div2{
+  position: relative;
+  width: 180px;
+  height: 15px;
+  padding: 10px;
+  border: 0.5px solid rgb(153, 153, 153);
+  border-radius: 8px;
+  left:  50rem;
+  bottom: 11.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.AI-div2 p {
+  margin: 0;
+  font-size: 15px;
+}
+.AI-div4{
+  position: relative;
+  width: 180px;
+  height: 15px;
+  padding: 10px;
+  border: 0.5px solid rgb(153, 153, 153);
+  border-radius: 8px;
+  left:  47rem;
+  bottom: 8.2rem;
+  background: transparent;
+
+}
+
+.AI-div4 p {
+  margin: 0;
+  font-size: 15px;
+}
 .sub-icons img {
   width: 225px; /* Adjust as necessary */
-  height: auto;
+  /* height: auto; */
   border-radius: 10px;
   background: transparent;
 }

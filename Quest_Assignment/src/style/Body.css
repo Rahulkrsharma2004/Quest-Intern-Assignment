@@ -3,11 +3,12 @@
   max-width: 800px;
   margin: auto;
   padding: 80px;
-  /* background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd); */
+  background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd);
   background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg');
+  /* background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg'); */
   /* background-size: cover; */
    background-position:right;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .bodyContainer h1 {

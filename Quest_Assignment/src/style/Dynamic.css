@@ -1,0 +1,41 @@
+.dynamicSection {
+  padding: 90px;
+  background: transparent;
+}
+.dynamicSectionP h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.dynamicSectionP p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.dynamicSectionAnimation {
+  background-color: rgba(50, 50, 50, 0.837);
+  padding: 15px;
+  margin-top: 6rem;
+  border-radius: 10px;
+}
+.QuizzesDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 1px solid rgb(123, 123, 123);
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(33, 33, 33, 0.837);
+}
+.QuizzesDiv h3 {
+  background: transparent;
+}
+.QuizzesDivImg {
+  height: auto;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+.QuizzesDivImg img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
