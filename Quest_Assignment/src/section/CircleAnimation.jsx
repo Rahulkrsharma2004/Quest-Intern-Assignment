@@ -42,10 +42,11 @@ const CircleAnimation = () => {
       minH="100vh"
       minW="100vw"
       display="flex"
+      
+        background="transparent"
       justifyContent="center"
       alignItems="center"
-      position="relative"
-    >
+      position="relative">
       <VStack spacing={17} align="center" m={10}>
         <Heading fontSize={{ base: "xl", md: "3xl" }} textAlign="center">
           Connects to your <br /> Existing Data Sources
@@ -62,13 +63,14 @@ const CircleAnimation = () => {
         height="330px"
         margin="auto"
         borderRadius="50%"
+        
+        background="transparent"
         display="flex"
         justifyContent="center"
         alignItems="center"
         animate={{ rotate: 360 }}
         transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-        border="1px solid #1a1a1a"
-      >
+        border="1px solid #1a1a1a">
         {innerIcons.map((icon, index) => {
           const angle = (index / innerIcons.length) * 2 * Math.PI;
           const x = innerRadius * Math.cos(angle);
@@ -84,10 +86,10 @@ const CircleAnimation = () => {
               padding="5px"
               boxSize="35px"
               borderRadius="50%"
+              background="transparent"
               display="flex"
               justifyContent="center"
-              alignItems="center"
-            >
+              alignItems="center">
               <Image src={icon} boxSize="25px" borderRadius="50%" />
             </Box>
           );
@@ -106,8 +108,7 @@ const CircleAnimation = () => {
         alignItems="center"
         animate={{ rotate: -360 }}
         transition={{ duration: 150, repeat: Infinity, ease: "linear" }}
-        border="1px solid #1a1a1a"
-      >
+        border="1px solid #1a1a1a">
         {outerIcons.map((icon, index) => {
           const angle = (index / outerIcons.length) * 2 * Math.PI;
           const x = outerRadius * Math.cos(angle);
@@ -125,8 +126,7 @@ const CircleAnimation = () => {
               borderRadius="50%"
               display="flex"
               justifyContent="center"
-              alignItems="center"
-            >
+              alignItems="center">
               <Image src={icon} boxSize="25px" borderRadius="50%" />
             </Box>
           );
