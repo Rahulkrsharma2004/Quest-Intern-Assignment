@@ -1,3 +1,4 @@
+import BeforeFooter from './section/BeforeFooter'
 import Body from './section/Body'
 import CircleAnimation from './section/CircleAnimation'
 import Dynamic from './section/Dynamic'
@@ -15,6 +16,7 @@ function App() {
           <Hero/>
           <Dynamic/>
           <CircleAnimation/>
+          <BeforeFooter/>
           <Footer/>
       </div>
     </>
