@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, VStack, Text, Image, Heading } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { Box, VStack, Text, Image, Heading, Center } from "@chakra-ui/react";
+import { motion, transform } from "framer-motion";
 
 const MotionBox = motion(Box);
 
@@ -31,8 +31,8 @@ const CircleAnimation = () => {
     "https://www.questlabs.ai/assets/stack-MxdB7c0M.svg",
   ];
 
-  const innerRadius = 140;
-  const outerRadius = 200;
+  const innerRadius = 185;
+  const outerRadius = 260;
 
   return (
     <Box
@@ -46,24 +46,28 @@ const CircleAnimation = () => {
       alignItems="center"
       position="relative"
     >
-      <VStack spacing={8} align="center" zIndex={1} textAlign="center">
-        <Heading fontSize={{ base: "xl", md: "3xl" }}>
+      <VStack spacing={17} align="center" m={10}>
+        <Heading fontSize={{ base: "xl", md: "3xl" }} textAlign="center">
           Connects to your <br /> Existing Data Sources
         </Heading>
-        <Text fontSize="md" color="gray.500">
-          Product usage data is collected from <br /> your existing Product & Data stack.
+        <Text fontSize="md" color={"gray.500"} textAlign="center">
+          Product usage data is collected from <br /> your existing Product &
+          Data stack.
         </Text>
       </VStack>
       <MotionBox
         position="absolute"
-        width="280px"
-        height="280px"
+        p={20}
+        width="330px"
+        height="330px"
+        margin="auto"
         borderRadius="50%"
         display="flex"
         justifyContent="center"
         alignItems="center"
         animate={{ rotate: 360 }}
-        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
+        border="1px solid #1a1a1a"
       >
         {innerIcons.map((icon, index) => {
           const angle = (index / innerIcons.length) * 2 * Math.PI;
@@ -76,8 +80,8 @@ const CircleAnimation = () => {
               left={`calc(50% + ${x}px)`}
               top={`calc(50% + ${y}px)`}
               transform="translate(-50%, -50%)"
-              bg="gray.900"
-              p="5px"
+              backgroundColor="#1a1a1a"
+              padding="5px"
               boxSize="35px"
               borderRadius="50%"
               display="flex"
@@ -91,14 +95,18 @@ const CircleAnimation = () => {
       </MotionBox>
       <MotionBox
         position="absolute"
-        width="400px"
-        height="400px"
+        p={30}
+        width="450px"
+        height="450px"
+        margin="auto"
         borderRadius="50%"
         display="flex"
+        background="transparent"
         justifyContent="center"
         alignItems="center"
         animate={{ rotate: -360 }}
-        transition={{ duration: 90, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 150, repeat: Infinity, ease: "linear" }}
+        border="1px solid #1a1a1a"
       >
         {outerIcons.map((icon, index) => {
           const angle = (index / outerIcons.length) * 2 * Math.PI;
@@ -111,8 +119,8 @@ const CircleAnimation = () => {
               left={`calc(50% + ${x}px)`}
               top={`calc(50% + ${y}px)`}
               transform="translate(-50%, -50%)"
-              bg="gray.900"
-              p="5px"
+              backgroundColor="#1a1a1a"
+              padding="5px"
               boxSize="35px"
               borderRadius="50%"
               display="flex"
@@ -127,5 +135,4 @@ const CircleAnimation = () => {
     </Box>
   );
 };
-
 export default CircleAnimation;
