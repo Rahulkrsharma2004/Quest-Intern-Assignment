@@ -1,4 +1,5 @@
 import Body from './section/Body'
+import CircleAnimation from './section/CircleAnimation'
 import Dynamic from './section/Dynamic'
 import Footer from './section/Footer'
 import Hero from './section/Hero'
@@ -13,6 +14,8 @@ function App() {
           <Body/>
           <Hero/>
           <Dynamic/>
+          <CircleAnimation/>
+          <Footer/>
       </div>
     </>
   )

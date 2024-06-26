@@ -5,7 +5,7 @@
   padding: 80px;
   background: linear-gradient(5deg, #630ad8, #170072 49%, #6365dd);
   background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg');
-  /* background-image: url('https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg'); */
+  background-image:url(https://www.questlabs.ai/assets/leftSideDots-F2-L56Gr.svg), url(https://www.questlabs.ai/assets/rightSideDots-VoZRD2RA.svg);
   /* background-size: cover; */
    background-position:right;
   background-repeat: repeat;

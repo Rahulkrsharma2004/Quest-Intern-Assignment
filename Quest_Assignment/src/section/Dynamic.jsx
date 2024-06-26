@@ -32,7 +32,7 @@ const Dynamic = () => {
           </div>
         </div>
         <div className="">
-
+            
         </div>
       </section>
     </>
